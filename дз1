@@ -1,0 +1,22 @@
+print("Введите размер бортика N")
+n = int(input())
+print("Введите размер бортика M")
+m = int(input())
+print("Введите x")
+x = int(input())
+print("Введите y")
+y = int(input())
+
+if n>=m: 
+    a = abs(n - y) # abs - функция модуля
+    b = abs(m - x)
+
+elif n<m: 
+    a = abs(m - y)
+    b = abs(n - x)
+
+if (x==0 or y==0):
+    print(0)
+
+else:
+    print(min(x, y, a, b))
